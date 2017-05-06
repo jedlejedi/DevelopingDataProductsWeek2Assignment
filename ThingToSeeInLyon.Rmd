@@ -1,0 +1,17 @@
+---
+title: "Things to see in the City of Lyon"
+output: html_document
+---
+
+The map below shows some interesting places to visit in Lyon. This map was created on the 6th of May 2017.
+
+```{r echo=FALSE}
+library(leaflet)
+lat <- c(45.777378, 45.774986, 45.767525, 45.761013, 45.762255)
+lng <- c(4.854654, 4.832461, 4.833726, 4.826988, 4.822546)
+popup <- c("<a href='http://www.loisirs-parcdelatetedor.com/'>Parc de la Tete d'Or</a>", "<a href='https://en.wikipedia.org/wiki/La_Croix-Rousse'>Place de la Croix Rousse</a>", "<a href='http://www.loisirs-parcdelatetedor.com/'>Museum of Fine Arts</a>", "<a href='www.vieux-lyon.org/'>Old Town</a>", "<a href='http://www.fourviere.org/'>Fourviere Basilica</a>")
+
+m <- leaflet() %>% addTiles() %>% addTiles() %>% addMarkers(lat=lat, lng=lng, popup=popup)
+
+m
+```
