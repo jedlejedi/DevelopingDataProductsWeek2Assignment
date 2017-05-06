@@ -3,7 +3,7 @@ title: "Things to see in the City of Lyon"
 output: html_document
 ---
 
-The map below shows some interesting places to visit in Lyon. This map was created on the 6th of May 2017.
+The map below shows some interesting places to visit in Lyon. This map was created on the <strong>6th of May 2017</strong>.
 
 ```{r echo=FALSE}
 library(leaflet)
